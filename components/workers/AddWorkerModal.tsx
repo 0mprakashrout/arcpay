@@ -39,6 +39,7 @@ export default function AddWorkerModal({ onAddWorker }: Props) {
 
       <div className="grid gap-4">
         <input
+          suppressHydrationWarning
           className="bg-black border border-gray-700 rounded-lg p-3"
           placeholder="Worker Name"
           value={name}
@@ -46,6 +47,7 @@ export default function AddWorkerModal({ onAddWorker }: Props) {
         />
 
         <input
+          suppressHydrationWarning
           className="bg-black border border-gray-700 rounded-lg p-3"
           placeholder="Wallet Address"
           value={wallet}
@@ -53,6 +55,7 @@ export default function AddWorkerModal({ onAddWorker }: Props) {
         />
 
         <input
+          suppressHydrationWarning
           className="bg-black border border-gray-700 rounded-lg p-3"
           placeholder="Salary (USDC)"
           value={salary}
@@ -60,18 +63,20 @@ export default function AddWorkerModal({ onAddWorker }: Props) {
         />
 
         <input
+          suppressHydrationWarning
           className="bg-black border border-gray-700 rounded-lg p-3"
           placeholder="Role"
           value={role}
           onChange={(e) => setRole(e.target.value)}
         />
 
-        <button
-          onClick={handleSubmit}
-          className="bg-white text-black rounded-lg px-6 py-3 font-semibold"
-        >
-          Save Worker
-        </button>
+       <button
+  suppressHydrationWarning
+  onClick={handleSubmit}
+  className="bg-white text-black rounded-lg px-6 py-3 font-semibold"
+>
+  Save Worker
+</button>
       </div>
     </div>
   );

@@ -99,6 +99,7 @@ export default function HomePage() {
                 </p>
 
                 <button
+                suppressHydrationWarning
                   onClick={() =>
                     handleSendPayroll(worker.wallet, worker.salary)
                   }

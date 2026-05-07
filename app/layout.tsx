@@ -3,7 +3,7 @@ import Providers from "./providers";
 
 export const metadata = {
   title: "ArcPay Payroll Dashboard",
-  description: "Payroll dashboard on Arc Testnet with USDC payments",
+  description: "Manage USDC payroll on Arc Testnet",
 };
 
 export default function RootLayout({
@@ -12,8 +12,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>
+    <html lang="en" suppressHydrationWarning>
+      <body suppressHydrationWarning>
         <Providers>
           {children}
         </Providers>
